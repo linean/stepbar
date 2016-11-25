@@ -1,5 +1,6 @@
 # StepBar
-Stepbar is Android library which allows you to show steps in some process 
+Stepbar is Android library which allows you to show steps in some process.
+
 Minimum steps count is 2 but maximum depends only on screen size :)
 
 
