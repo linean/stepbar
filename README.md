@@ -46,7 +46,7 @@ Add StepBarWidget to your layout: (you can set bar height, but steps size are co
 
     </RelativeLayout>
 
-Then add StepBar to your Activity (or another context holder):
+Then add StepBar to your Activity (or other context holder):
 
     public class MainActivity extends AppCompatActivity implements StepBar.OnStepClick{
 
