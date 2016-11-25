@@ -1,6 +1,26 @@
 # StepBar
-Stepbar is Android library which allows you to show steps in some process
+Stepbar is Android library which allows you to show steps in some process 
 
+
+<img src="https://github.com/linean/stepbar/blob/master/image/sample_gif.gif" width="250">
+
+# Add do project 
+
+Step 1. Add the JitPack repository to your build file
+
+Add it in your root build.gradle at the end of repositories:
+
+	allprojects {
+		repositories {
+			...
+			maven { url "https://jitpack.io" }
+		}
+	}
+Step 2. Add the dependency
+
+	dependencies {
+	        compile 'com.github.linean:stepbar:1.0.0'
+	}
 
 # Usage
 
@@ -71,4 +91,5 @@ Then add StepBar to your Activity (or another context holder):
         }
     }
 
-Thats all :) 
+Feel free to ask question and report issues !
+Thanks :) 
