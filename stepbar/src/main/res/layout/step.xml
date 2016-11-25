@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/stepHolder"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/rightLine"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/stepActiveBackground"
+        android:background="@color/stepInactiveColor" />
+
+    <View
+        android:id="@+id/leftLine"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/stepActiveBackground"
+        android:background="@color/stepInactiveColor" />
+
+    <LinearLayout
+        android:id="@+id/stepActiveBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/step_background"
+        android:gravity="center"
+        android:padding="3dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/step_background"
+            android:padding="0dp">
+
+            <TextView
+                android:id="@+id/stepMarker"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/step_background"
+                android:gravity="center"
+                android:text="1"
+                android:textAppearance="?android:attr/textAppearance" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/stepText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/stepActiveBackground"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:paddingTop="5dp"
+        android:text="Step 1"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="13sp" />
+
+</RelativeLayout>
